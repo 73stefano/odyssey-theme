@@ -53,6 +53,19 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 		justify-self: center;
 		max-width: 25rem;
 	}
+
+
+	.hero-section__text h1 , p {
+		background: linear-gradient(90deg, rgb(11, 11, 11), #fff, rgb(11, 11, 11));
+		background-repeat: no-repeat;
+		background-size: 80%;
+		animation: animate 6s linear 3;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: rgba(255, 255, 255, 0.2);
+		-webkit-animation-direction: alternate;	
+	}
+
+
 	.hero-btns__container {
 		display: flex;
 		align-items: center;
@@ -91,5 +104,15 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
-}
+	}
+
+	@keyframes animate {
+	0% {
+		background-position: -500%;
+	}
+	100% {
+		background-position: 500%;
+	}
+	}
+
 </style>
