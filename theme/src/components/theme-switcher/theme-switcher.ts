@@ -20,7 +20,7 @@ const themes = [
     icon: darkThemeIcon,
     label: 'Dark',
   },
-  {
+ /*{
     name: 'earth',
     icon: earthThemeIcon,
     label: 'Earth',
@@ -34,7 +34,7 @@ const themes = [
     name: 'sand',
     icon: orangeThemeIcon,
     label: 'Sand',
-  }
+  } */
 ]
 
 @customElement('theme-switcher')
