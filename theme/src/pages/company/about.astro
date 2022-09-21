@@ -12,8 +12,8 @@ const seo = {
 <Layout {seo}>
 	<HeroSection>
 		<div slot="text-container">
-			<h1>About Odyssey</h1>
-			<p>
+			<h1  class="text-smoke">Giovanna Santoro</h1>
+			<p class="text-smoke">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nisi
 				recusandae? Quidem dignissimos nobis, dicta unde, aperiam voluptate
 				autem iste reprehenderit, aliquam ducimus illo ea ipsum qui animi sequi.
@@ -21,7 +21,7 @@ const seo = {
 			</p>
 		</div>
     <picture slot="image-container">
-      <img
+      <img class="fade-in-image"
         src="/assets/images/home/classic-hero.jpg"
         alt="Astro Odyssee"
         id="home-hero-image"
@@ -45,3 +45,36 @@ const seo = {
     </p>
   </TextSection>
 </Layout>
+
+<style>
+
+  .text-smoke {
+    text-shadow: 0 0 0 whitesmoke;
+    animation: smoky 3s ease-in-out;
+    /* animation-direction: reverse; */
+  }
+
+  @keyframes smoky {
+  0% {
+    transform:
+      translate3d(10px, -300px, 0)
+      rotate(-20deg)
+      skewX(70deg)
+      scale(0.5); 
+    text-shadow: 20px 20px 30px whitesmoke;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ .fade-in-image { animation: fadeIn 9s; }
+
+ @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+</style>
