@@ -12,13 +12,13 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 				<h3>Quartetto Crom4tiche</h3>
 				<div class="hero-btns__container">
 					<Button href="/company/contact" customIcon
-						>primo
-            <Fragment slot="icon">
-              <Icon name="ic:baseline-chevron-right"/>
-            </Fragment>
-            </Button
-					>
-					<Button href="/theme/style-guide" unelevated>secondo</Button>
+						>Biografia
+						<Fragment slot="icon">
+						<Icon name="ic:baseline-chevron-right"/>
+						</Fragment>
+            		</Button>
+
+					<Button href="/theme/style-guide" outlined>Galleria</Button>
 				</div>
         {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 		</div>
