@@ -9,13 +9,14 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 	<section class="hero-section__section">
 		<div class="hero-section__text">
 				<h1>Giovanna Santoro</h1>
-				<p>
+				<h3>Quartetto Crom4tiche</h3>
+				<!-- <p>
 					A marketing website theme built with <a
 						href="https://astro.build"
 						target="_blank"
 						rel="noreferrer">Astro</a
 					> and carefully crafted for startups and businesses.
-				</p>
+				</p> -->
 				<div class="hero-btns__container">
 					<Button href="/company/contact" customIcon
 						>primo
@@ -55,13 +56,14 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 	}
 
 
-	.hero-section__text h1,p {
+	.hero-section__text h1,h3,p {
+		/* text-align: center; */
 		background: linear-gradient(90deg, rgb(11, 11, 11), #fff, rgb(11, 11, 11));
 		background-repeat: no-repeat;
 		background-size: 70%;
-		animation: animate 3s ease-out 2;
+		animation: animate 4s linear infinite;
 		-webkit-background-clip: text;
-		-webkit-text-fill-color: rgba(255, 255, 255, 0.2);
+		-webkit-text-fill-color: rgba(255, 255, 255, 0.5);
 		-webkit-animation-direction: alternate;	
 	}
 
