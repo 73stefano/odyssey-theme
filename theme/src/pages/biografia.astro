@@ -1,0 +1,136 @@
+---
+import { TextSection } from '@littlesticks/odyssey-theme-components';
+import Layout from '../layouts/Page.astro';
+import HeroSection from '../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'About | Astro Odyssey Theme',
+	description: 'About Page',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1 class="text-smoke">Giovanna Santoro</h1>
+			<h3 class="text-smoke  marg ">Pianista</h3>
+			<h4 class="text-smoke">Esperienza e Formazione:</h4>
+			<p class="text-smoke">
+				Giovanna Santoro ha conseguito la laurea, vecchio ordinamento, in
+				pianoforte, presso il Conservatorio musicale “O.Respighi” di Latina, nel
+				1999. In seguito ha approfondito lo studio della tecnica pianistica con
+				il maestro Licia Mancini e Giandomenico Gravina, partecipando anche a
+				vari concorsi internazionali, con i violinisti Alessandro Malizia e
+				Irene Malizia, aggiudicandosi primi e secondi premi. Continua la sua
+				formazione a Gallarate sotto la guida del maestro Rucli, nel biennio
+				superiore di pianoforte presso l’Istituto musicale superiore di
+				Gallarate. Pianista versatile, svolge diverse attività artistiche in
+				varie tipologie di formazioni artistiche e ampio repertorio, pianista
+				solista, in duo pianistico a 4 mani, cameristica sia con strumenti a
+				fiato che ad arco, pianista accompagnatore in concerti lirici e sacri
+				con cantanti lirici e non, e pianista accompagnatore in concerti corali.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				class="fade-in-image"
+				src="/assets/images/home/Giovanna-Santoro.jpg"
+				alt="Astro Odyssee"
+				id="home-hero-image"
+			/>
+		</picture>
+	</HeroSection>
+	<TextSection narrow>
+		<p>
+			Dal 1998 al 2022 ricopre il ruolo di pianista accompagnatore del coro
+			polifonico professionista “Josquin Des Pres”, diretto dal maestro Mauro
+			Gizzi, ora direttore del conservatorio musicale “Licinio Refice” di
+			Frosinone. Con il suddetto coro ha partecipato a molteplici tournee, in
+			Francia, Olanda, Slovacchia, Repubblica Ceca, Belgio e in Germania,
+			esibendosi in teatri e sale da concerto prestigiose.
+		</p>
+		<p>
+			Inoltre ha partecipato a numerose trasmissioni televisive, “Scalo 76
+			talent” nel 2009, “Furore” nel 2010, scritturata, come pianista
+			dall’ufficio Rai di Milano e dall’ufficio mediaset di Roma, e
+			radiofoniche, come “Poltronissima e la “Barcaccia” condotte dal maestro
+			Enrico Stinchelli. Nel 2001 ha collaborato con Pippo Franco al “Fiuggi
+			Festival”, in qualità di pianista solista e accompagnatore del coro
+			“Josquin Des Pres” in diverse performance musicali.
+		</p>
+
+		<p>
+			Dal 2003 ha collaborato con il clarinettista Nicola Bulfone, primo
+			clarinetto dell’orchestra sinfonica del Friuli Venezia Giulia, inoltre,
+			come concertista solista, ha preso parte della rassegna “I concerti al
+			teatro delle Erbe” di Milano, sotto la direzione artistica di Antonio
+			Bonello e Cristina D’Avena. Nel periodo milanese, dal 2002 al 2010, ha
+			svolto un’intensa attività concertistica in parecchie formazioni
+			operistiche e strumentali, acquisendo così una sempre più vasta conoscenza
+			dei diversi repertori musicali. Nel 2013 ha partecipato al “Festival dei
+			due mondi” a Spoleto, come pianista nell’orchestra di Monsignor Marco
+			Frisina.
+		</p>
+		<p>
+			La sua passione per la musica e l’arte in generale, l’ha spinta a
+			coltivare un interesse per approfondire e perfezionare il suo stile
+			espressivo e tecnico, studiando in varie master-class, con grandi colossi
+			della musica pianistica, quali, il maestro Paul Badura Skoda, Carlo Levi
+			Minzi e Mara Morelli.
+		</p>
+		<p>
+			Attualmente svolge attività concertistica con il trio “Renaissance”,
+			insieme al soprano Rezarta Dyrmyshi e all’oboista Enio Marfoli e con il
+			quartetto “Crom4tiche” formato da tre soprano ( Rezarta Dyrmyshi, Ramona
+			Veneri e Lorena Sarra) e pianoforte, i cui repertori spaziano dall’opera
+			lirica al musical. Con il gruppo musicale “Endless Road” composto da
+			ragazzi di età compresa tra i 7 e i 12 anni, ha prodotto due video
+			musicali, “Parola al coronavirus” nel 2020 e “In cammino (adesso basta)”
+			nel 2022, una richiesta di pace nel mondo, i cui testi sono stati scritti
+			e cantati dall’adolescente Ludovica Buzzi, per il quale ha ottenuto un
+			elogio scritto dalla presidenza della Repubblica italiana.
+		</p>
+		<p style="font-style: italic;">
+			" Sempre molto sensibile ai temi sociali che affliggono il nostro tempo,
+			ha suonato in molte occasioni a scopo benefico."
+		</p>
+	</TextSection>
+</Layout>
+
+<style>
+	.text-smoke {
+		text-shadow: 0 0 0 whitesmoke;
+		animation: smoky 3s ease-in-out;
+		/* animation-direction: reverse; */
+	}
+	.marg {
+		margin-top: -20px;
+	}
+
+	@keyframes smoky {
+		0% {
+			transform: translate3d(10px, -300px, 0) rotate(-20deg) skewX(70deg)
+				scale(0.5);
+			text-shadow: 20px 20px 30px whitesmoke;
+			opacity: 0;
+		}
+		50% {
+			opacity: 0.1;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	.fade-in-image {
+		animation: fadeIn 9s;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+</style>
