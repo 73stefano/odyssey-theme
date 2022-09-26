@@ -16,7 +16,7 @@ const { seo } = Astro.props as Props;
 ---
 
 <Layout {seo}>
-	<Header rightMenu navData={nav} slot="header">
+	<Header class="test" rightMenu navData={nav} slot="header">
 		<span slot="logo">
 			<Logo />
 		</span>
@@ -37,3 +37,10 @@ const { seo } = Astro.props as Props;
 		<Logo slot="logo" />
 	</Footer>
 </Layout>
+
+<style>
+	nav ul li a:hover {
+		opacity: 1;
+		text-decoration: underline;
+	}
+</style>

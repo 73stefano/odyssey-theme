@@ -9,7 +9,7 @@ const seo = {
 };
 ---
 
-<Layout seo={seo}>
+<Layout {seo}>
 	<Container>
 		<section class="contact-hero__section">
 			<div class="contact-hero__text-section">
@@ -29,18 +29,19 @@ const seo = {
 					</p>
 				</div>
 			</div>
-			<div class="col-2__container">
+			<!-- <div class="col-2__container">
 				<ContactForm />
-			</div>
+			</div> -->
 		</section>
 	</Container>
 </Layout>
 
 <style>
 	.contact-hero__section {
-		margin: var(--section-margin) auto;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		margin: 55px 50px 75px 50px;
+		/* margin: var(--section-margin) auto; */
+		/* display: grid;
+		grid-template-columns: 2fr 2fr; */
 		min-height: calc(90vh - var(--navbar-height));
 		gap: 3rem;
 	}
