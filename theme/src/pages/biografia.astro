@@ -95,7 +95,7 @@ const seo = {
 			ha suonato in molte occasioni a scopo benefico.”
 		</p>
 	</TextSection>
-	<h2 style=" opacity:0.7 ; text-align: center;">- Formazione “Quartetto Crom4tiche”-</h2>
+	<h2 id="title">Formazione “Quartetto Crom4tiche”</h2>
 
 	<HeroSection>
 		<div slot="text-container">
@@ -170,7 +170,7 @@ const seo = {
 
 	@keyframes smoky {
 		0% {
-			transform: translate3d(10px, -300px, 0) rotate(-20deg) skewX(70deg)
+			transform: translate3d(10px, -300px, 0) /* skewX(70deg)  rotate(-20deg)  */
 				scale(0.5);
 			text-shadow: 20px 20px 30px whitesmoke;
 			opacity: 0;
@@ -193,5 +193,12 @@ const seo = {
 		100% {
 			opacity: 1;
 		}
+	}
+
+	#title {
+		opacity:0.7 ;
+		text-align: center;
+		font-size: var(--font-size-lg);
+
 	}
 </style>
