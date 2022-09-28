@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Page.astro';
+import ImageSection from '../components/sections/heros/imageSection.astro';
+
+const seo = {
+	title: 'Galleria | Galleria immagini Gionanna Santoro',
+	description: 'Galleria Immagini',
+};
+---
+
+<Layout {seo}>
+	<ImageSection>
+		<picture slot="image-container">
+			<img
+				class="fade-in-image"
+				src="/assets/images/home/Rezarta-Dyrmyshi.png"
+				alt="Giovanna-Santoro"
+				id="home-hero-image"
+			/>
+		</picture>
+
+		<picture slot="image-container">
+			<img
+				class="fade-in-image"
+				src="/assets/images/home/Giovanna-Santoro.jpg"
+				alt="Giovanna-Santoro"
+				id="home-hero-image"
+			/>
+		</picture>
+	</ImageSection>
+</Layout>

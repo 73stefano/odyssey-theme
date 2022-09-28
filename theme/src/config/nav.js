@@ -9,7 +9,7 @@ export const nav = [
 	},
 	{
 		title: 'Galleria',
-		slug: '/company/about',
+		slug: '/galleria',
 	},
 	{
 		title: 'Formazioni Artistiche',
