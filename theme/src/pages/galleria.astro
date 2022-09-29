@@ -27,6 +27,7 @@ const seo = {
 			/>
 		</picture>
 	</ImageSection>
+
 	<ImageSection>
 		<picture slot="image-container-1">
 			<img
@@ -64,3 +65,18 @@ const seo = {
 		</picture>
 	</ImageSection> -->
 </Layout>
+
+<style>
+	.fade-in-image {
+		animation: fadeIn 9s;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+</style>
