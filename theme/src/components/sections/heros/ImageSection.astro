@@ -5,10 +5,10 @@ import { Container } from '@littlesticks/odyssey-theme-components';
 <Container>
 	<section class="hero-section__section">
 		<div class="hero-section__image">
-			<slot name="image-container" />
+			<slot name="image-container-1" />
 		</div>
 		<div class="hero-section__image">
-			<slot name="image-container" />
+			<slot name="image-container-2" />
 		</div>
 	</section>
 </Container>
@@ -22,20 +22,21 @@ import { Container } from '@littlesticks/odyssey-theme-components';
 		align-items: center;
 		gap: 1rem;
 	}
-	.hero-section__text {
+	/* .hero-section__text {
 		justify-self: center;
 		max-width: 25rem;
-	}
-	.hero-btns__container {
-		/* display: flex; */
+	} */
+	/* .hero-btns__container {
+		display: flex;
 		align-items: center;
 		gap: 1rem;
 	}
 	.hero-btns__container {
 		margin-right: 1rem;
-	}
+	} */
 	.hero-section__image {
 		display: flex;
+		justify-self: center;
 	}
 	.hero-section__image :global(img) {
 		width: 100%;
