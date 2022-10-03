@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Page.astro';
+import { TextSection } from '@littlesticks/odyssey-theme-components';
+import {
+	Button,
+	CustomerQuoteSection,
+	YouTubeEmbedSection,
+	StickyTextImageSection,
+	CtaCardSection,
+} from '@littlesticks/odyssey-theme-components';
+
+const seo = {
+	title: 'Video | Video di Giovanna Santoro',
+	description: 'Video di Giovanna Santoro "Pianista" e sue collaborazioni',
+};
+---
+
+<Layout {seo}>
+	<TextSection narrow>
+		<h3>Video di Giovanna Santoro e gli EndlessRoad</h3>
+	</TextSection>
+
+	<YouTubeEmbedSection
+		url="https://www.youtube.com/watch?v=cbYr75_R15M?autoplay=1"
+		rounded
+		allow="autoplay"
+	/>
+
+	<div class="youtube">
+		<p>EndlessRoad</p>
+		<YouTubeEmbedSection
+			url="https://www.youtube.com/watch?v=w3azjGJTTEw?autoplay=1"
+			rounded
+			allow="autoplay"
+		/>
+	</div>
+</Layout>
+
+<style>
+	.youtube {
+		margin: var(--section-margin) 200px;
+	}
+</style>

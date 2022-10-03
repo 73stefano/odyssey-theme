@@ -21,6 +21,6 @@ export const nav = [
 	},
 	{
 		title: 'Video',
-		slug: '/company/contact',
+		slug: '/video',
 	},
 ];

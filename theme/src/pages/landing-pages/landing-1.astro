@@ -82,12 +82,13 @@ const seo = {
 		</div>
 		<Button slot="column-3-cta">Learn More</Button>
 	</ThreeColumnTextSection>
-
-	<YouTubeEmbedSection
-		url="https://www.youtube.com/watch?v=cbYr75_R15M?autoplay=1"
-		rounded
-		allow="autoplay"
-	/>
+	<div class="youtube">
+		<YouTubeEmbedSection
+			url="https://www.youtube.com/watch?v=cbYr75_R15M?autoplay=1"
+			rounded
+			allow="autoplay"
+		/>
+	</div>
 
 	<StickyTextImageSection>
 		<div slot="text-container">
@@ -139,3 +140,9 @@ const seo = {
 		>
 	</CtaCardSection>
 </Layout>
+
+<style>
+	.youtube {
+		margin: var(--section-margin) 200px;
+	}
+</style>
