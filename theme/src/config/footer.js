@@ -53,12 +53,13 @@ export const footerLists = [
 	{
 		items: [
 			{
-				
+				title: '',
 			}
 		]
 		 
-	}
+	},
 ]
+
 // 	{
 // 		title: 'Landing Pages',
 // 		items: [
