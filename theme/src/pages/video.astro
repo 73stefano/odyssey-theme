@@ -19,7 +19,7 @@ const seo = {
 	<TextSection narrow>
 		<h1 class="title">Video di Giovanna Santoro e gli Endless Road</h1>
 	</TextSection>
-	<div>
+	<div class="youtube">
 		<TextSection>
 			<h3>Parola al Coronavirus (altalena)</h3>
 		</TextSection>
@@ -70,7 +70,7 @@ const seo = {
 		</ul>
 	</TextSection>
 
-	<div>
+	<div class="youtube">
 		<TextSection>
 			<h3>In Cammino (adesso basta)</h3>
 		</TextSection>
@@ -132,7 +132,7 @@ const seo = {
 		</ul>
 	</TextSection>
 
-	<div>
+	<div class="youtube">
 		<TextSection>
 			<h3>LA MAMMA MORTA - U. GIORDANO</h3>
 			<h4>Soprano: MARIA CARMEN FALSTAFFI -- Piano: GIOVANNA SANTORO</h4>
@@ -146,9 +146,11 @@ const seo = {
 </Layout>
 
 <style>
-	/* .youtube {
-		margin: var(--section-margin) auto;
-	} */
+	@media only screen and (min-width: 768px) {
+		.youtube {
+			margin: var(--section-margin) 70px;
+		}
+	}
 	.title {
 		text-align: center;
 	}

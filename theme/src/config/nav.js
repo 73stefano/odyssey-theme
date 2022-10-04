@@ -12,15 +12,15 @@ export const nav = [
 		slug: '/galleria',
 	},
 	{
+		title: 'Video',
+		slug: '/video',
+	},
+	{
 		title: 'Formazioni Artistiche',
 		slug: '/company/contact',
 	},
 	{
 		title: 'Recensioni',
-		slug: '/company/contact',
-	},
-	{
-		title: 'Video',
-		slug: '/video',
+		slug: 'company/contact',
 	},
 ];
