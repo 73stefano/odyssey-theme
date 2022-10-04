@@ -17,7 +17,7 @@ export const nav = [
 	},
 	{
 		title: 'Formazioni Artistiche',
-		slug: '/company/contact',
+		slug: '/formazioni-artistiche',
 	},
 	{
 		title: 'Recensioni',

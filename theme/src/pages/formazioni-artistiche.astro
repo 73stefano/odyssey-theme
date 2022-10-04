@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Page.astro';
+import ImageSection from '../components/sections/heros/ImageSection.astro';
+import { TextSection } from '@littlesticks/odyssey-theme-components';
+
+const seo = {
+	title: 'Formazioni Artistiche | Formazioni Artistiche con Gionanna Santoro',
+	description:
+		'Le Formazioni Artistiche e le Collaborazioni di Giovanna Santoro "Pianista"',
+};
+---
+
+<Layout {seo}>
+	<TextSection narrow>
+		<h1 class="textCenter">Formazioni Artistiche di Giovanna Santoro</h1>
+	</TextSection>
+	<TextSection narrow>
+		<h3>Quartetto Crom4tiche</h3>
+	</TextSection>
+
+	<ImageSection>
+		<picture slot="image-container-1">
+			<!-- <h3>Quartetto Crom4tiche</h3> -->
+			<img
+				class="fade-in-image"
+				src="/assets/images/home/Giovanna-Santoro.jpg"
+				alt="Giovanna-Santoro"
+				id="home-hero-image"
+			/>
+			<p>Giovanna Santoro</p>
+		</picture>
+		<picture slot="image-container-2">
+			<img
+				class="fade-in-image"
+				src="/assets/images/home/Rezarta-Dyrmyshi.png"
+				alt="Giovanna-Santoro"
+				id="home-hero-image"
+			/>
+			<p>Rezarta-Dyrmyshi</p>
+		</picture>
+	</ImageSection>
+</Layout>
+
+<style>
+	.textCenter {
+		text-align: center;
+	}
+</style>
