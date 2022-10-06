@@ -1,7 +1,7 @@
 export default {
-	title: `Odyssey Astro Theme | A Marketing Website Theme for Startups and Businesses`,
-	description: `A simple, clean, and modern theme for a startup or businesses' marketing website.`,
-	url: `https://odyssey-theme.littlesticks.dev`, // No trailing slash!
+	title: `Giovanna Santoro | Quartetto Crom4tiche`,
+	description: `Giovanna Santoro Pianista e il Quartetto Crom4tiche`,
+	url: `https://giovannasantoro.netlify.app/`, // No trailing slash!
 	name: `Giovanna Santoro`, // The short name of the business or brand name. Used for things like the copyright in the footer.
 	enableThemeSwitcher: true,
 	showLittleSticksPlug: false, // Disable this if you want to remove the Little Sticks plug from the footer. (╯°□°)╯︵ ┻━┻
