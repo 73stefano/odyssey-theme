@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Page.astro';
 import ImageSection from '../components/sections/heros/ImageSection.astro';
+import { Container } from '@littlesticks/odyssey-theme-components';
 
 const seo = {
 	title: 'Galleria | Galleria immagini Gionanna Santoro',
@@ -10,52 +11,53 @@ const seo = {
 ---
 
 <Layout {seo}>
-	<ImageSection>
-		<picture slot="image-container-1">
-			<img
-				class="fade-in-image"
-				src="/assets/images/home/Giovanna-Santoro.jpg"
-				alt="Giovanna-Santoro"
-				id="home-hero-image"
-				width={450}
-				height={700}
-			/>
-		</picture>
-		<picture slot="image-container-2">
-			<img
-				class="fade-in-image"
-				src="/assets/images/home/Rezarta-Dyrmyshi.png"
-				alt="Giovanna-Santoro"
-				id="home-hero-image"
-				width={450}
-				height={700}
-			/>
-		</picture>
-	</ImageSection>
+	<Container>
+		<ImageSection>
+			<picture slot="image-container-1">
+				<img
+					class="fade-in-image"
+					src="/assets/images/home/Giovanna-Santoro.jpg"
+					alt="Giovanna-Santoro"
+					id="home-hero-image"
+					width={450}
+					height={700}
+				/>
+			</picture>
+			<picture slot="image-container-2">
+				<img
+					class="fade-in-image"
+					src="/assets/images/home/Rezarta-Dyrmyshi.png"
+					alt="Giovanna-Santoro"
+					id="home-hero-image"
+					width={450}
+					height={700}
+				/>
+			</picture>
+		</ImageSection>
 
-	<ImageSection>
-		<picture slot="image-container-1">
-			<img
-				class="fade-in-image"
-				src="/assets/images/home/Rezarta-Dyrmyshi.png"
-				alt="Giovanna-Santoro"
-				id="home-hero-image"
-				width={450}
-				height={700}
-			/>
-		</picture>
-		<picture slot="image-container-2">
-			<img
-				class="fade-in-image"
-				src="/assets/images/home/Giovanna-Santoro.jpg"
-				alt="Giovanna-Santoro"
-				id="home-hero-image"
-				width={450}
-				height={700}
-			/>
-		</picture>
-	</ImageSection>
-	<!-- <ImageSection>
+		<ImageSection>
+			<picture slot="image-container-1">
+				<img
+					class="fade-in-image"
+					src="/assets/images/home/Rezarta-Dyrmyshi.png"
+					alt="Giovanna-Santoro"
+					id="home-hero-image"
+					width={450}
+					height={700}
+				/>
+			</picture>
+			<picture slot="image-container-2">
+				<img
+					class="fade-in-image"
+					src="/assets/images/home/Giovanna-Santoro.jpg"
+					alt="Giovanna-Santoro"
+					id="home-hero-image"
+					width={450}
+					height={700}
+				/>
+			</picture>
+		</ImageSection>
+		<!-- <ImageSection>
 		<div slot="text-container">
 			<img
 				class="fade-in-image"
@@ -73,6 +75,7 @@ const seo = {
 			/>
 		</picture>
 	</ImageSection> -->
+	</Container>
 </Layout>
 
 <style>
