@@ -21,6 +21,6 @@ export const nav = [
 	},
 	{
 		title: 'Recensioni',
-		slug: 'recensioni',
+		slug: '/recensioni',
 	},
 ];
