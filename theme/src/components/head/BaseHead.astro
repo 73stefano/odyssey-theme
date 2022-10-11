@@ -16,7 +16,7 @@ const description = Astro.props.description || settings.description;
 const canonicalURL = Astro.props.canonicalURL || new URL(Astro.url.pathname, Astro.site);
 const image = new URL(Astro.props.image || './social.png', Astro.site);
 
-const image2 = new URL(Astro.props.image || './assets/images/home/Rezarta-Dyrmyshi.png', Astro.site);
+const image2 = new URL(Astro.props.image || './favicon.png', Astro.site);
 
 
 // './assets/images/home/Giovanna.jpeg'
@@ -45,8 +45,8 @@ const image2 = new URL(Astro.props.image || './assets/images/home/Rezarta-Dyrmys
 <meta property="og:image:height" content="300" /> -->
 <meta property="og:image" content={image2} />
 <meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="297" />
-<meta property="og:image:height" content="294" />
+<meta property="og:image:width" content="256" />
+<meta property="og:image:height" content="256" />
 <meta property="og:image:alt" content="image for whatapp" />
 
 
