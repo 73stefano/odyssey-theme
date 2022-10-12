@@ -168,11 +168,14 @@ const seo = {
 				Andrea Vernengo. Nel cast anche le piccole Sophia Antoniu Melega e
 				Mariavittoria Balzarelli.
 			</p>
-			<Button
-				outlined
-				href="https://www.musicalnews.com/2020/09/22/ludovica-buzzi-virale-con-parola-al-coronavirus/"
-				>Fonte ...
-			</Button>
+			<div class="btn_container">
+				<Button
+					outlined
+					href="https://www.musicalnews.com/2020/09/22/ludovica-buzzi-virale-con-parola-al-coronavirus/"
+					>Fonte ...
+				</Button>
+				<Button outlined href="/video/#parola_al_coronavirus">Video ...</Button>
+			</div>
 		</div>
 		<picture slot="image-container">
 			<img
@@ -187,5 +190,10 @@ const seo = {
 <style>
 	.title {
 		text-align: center;
+	}
+	.btn_container {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
 	}
 </style>

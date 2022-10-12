@@ -2,53 +2,53 @@
 import { Icon } from 'astro-icon';
 import { Container, Button } from '@littlesticks/odyssey-theme-components';
 import settings from '../../../config/settings.js';
-import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
+import { ThemeSwitcher } from '../../theme-switcher/theme-switcher';
 ---
 
 <Container>
-	<div class="stars"> </div>
-	<div class="twinkling"></div> 
+	<div class="stars"></div>
+	<div class="twinkling"></div>
 	<section class="hero-section__section">
 		<div class="hero-section__text">
-				<h1>
-					<span>G</span>
-					<span>i</span>
-					<span>o</span>
-					<span>v</span>
-					<span>a</span>
-					<span>n</span>
-					<span>n</span>
-					<span>a</span>
-					<br>
-					<span>S</span> 
-					<span>a</span> 
-					<span>n</span>
-					<span>t</span>
-					<span>o</span>
-					<span>r</span>
-					<span>o</span>
-				</h1>
-				<h3>Quartetto Crom4tiche</h3>
-				<div class="hero-btns__container">
-					<Button href="/biografia" customIcon
-						>Biografia
-						<Fragment slot="icon">
-						<Icon name="ic:baseline-chevron-right"/>
-						</Fragment>
-            		</Button>
+			<h1>
+				<span>G</span>
+				<span>i</span>
+				<span>o</span>
+				<span>v</span>
+				<span>a</span>
+				<span>n</span>
+				<span>n</span>
+				<span>a</span>
+				<br />
+				<span>S</span>
+				<span>a</span>
+				<span>n</span>
+				<span>t</span>
+				<span>o</span>
+				<span>r</span>
+				<span>o</span>
+			</h1>
+			<h2>Quartetto Crom4tiche</h2>
+			<div class="hero-btns__container">
+				<Button href="/biografia" customIcon
+					>Biografia
+					<Fragment slot="icon">
+						<Icon name="ic:baseline-chevron-right" />
+					</Fragment>
+				</Button>
 
-					<Button href="/galleria" outlined>Galleria</Button>
-				</div>
-        {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
+				<Button href="/galleria" outlined>Galleria</Button>
+			</div>
+			<!-- {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>} -->
 		</div>
 		<div class="hero-section__image">
-				<picture>
-					<img
-						src="/assets/images/home/Giovanna.jpeg"
-						alt="Giovanna Santoro"
-						id="home-hero-image"
-					/>
-				</picture>
+			<picture>
+				<img
+					src="/assets/images/home/Giovanna.jpeg"
+					alt="Giovanna Santoro"
+					id="home-hero-image"
+				/>
+			</picture>
 		</div>
 	</section>
 </Container>
@@ -67,7 +67,6 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 		max-width: 25rem;
 	}
 
-
 	.hero-section__text h1 {
 		/* text-align: center;
 		background: linear-gradient(90deg, rgb(11, 11, 11), #fff, rgb(11, 11, 11));
@@ -78,69 +77,69 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 		-webkit-text-fill-color: rgba(255, 255, 255, 0.5);
 		-webkit-animation-direction: alternate;	 */
 		transform: scale(0.94);
- 		animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
+		animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
 	}
 
 	span {
 		display: inline-block;
 		opacity: 0;
 		filter: blur(4px);
-		}
-		span:nth-child(1) {
-			animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(2) {
-			animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(3) {
-			animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(4) {
-			animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(5) {
-			animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(6) {
-			animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(7) {
-			animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(8) {
-			animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(9) {
-			animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(10) {
-			animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(11) {
-			animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(12) {
-			animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(13) {
-			animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(14) {
-			animation: fade-in 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(15) {
-			animation: fade-in 0.8s 3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-		span:nth-child(16) {
-			animation: fade-in 0.8s 3.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-			.hero-section__text h3 {
-				display: inline-block;
-				opacity: 0;
-				filter: blur(4px);
-				animation: fade-in 0.8s 3.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-			}
-
+	}
+	span:nth-child(1) {
+		animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(2) {
+		animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(3) {
+		animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(4) {
+		animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(5) {
+		animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(6) {
+		animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(7) {
+		animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(8) {
+		animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(9) {
+		animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(10) {
+		animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(11) {
+		animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(12) {
+		animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(13) {
+		animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(14) {
+		animation: fade-in 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(15) {
+		animation: fade-in 0.8s 3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	span:nth-child(16) {
+		animation: fade-in 0.8s 3.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+	.hero-section__text h2 {
+		font-size: var(--font-size-lg);
+		display: inline-block;
+		opacity: 0;
+		filter: blur(4px);
+		animation: fade-in 0.8s 3.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
 
 	.hero-btns__container {
 		display: flex;
@@ -158,7 +157,7 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 		height: 100%;
 		max-height: 80vh;
 		object-fit: cover;
-		border-radius: 150px 300px 100px 300px;/* var(--theme-shape-radius); */
+		border-radius: 150px 300px 100px 300px; /* var(--theme-shape-radius); */
 		animation: float 6s ease-in-out infinite;
 	}
 	@media (max-width: 768px) {
@@ -168,18 +167,18 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 	}
 
 	@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(103, 103, 103, 0.3);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(103, 103, 103, 0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(103, 103, 103, 0.3);
-		transform: translatey(0px);
-	}
+		0% {
+			box-shadow: 0 5px 15px 0px rgba(103, 103, 103, 0.3);
+			transform: translatey(0px);
+		}
+		50% {
+			box-shadow: 0 25px 15px 0px rgba(103, 103, 103, 0.2);
+			transform: translatey(-20px);
+		}
+		100% {
+			box-shadow: 0 5px 15px 0px rgba(103, 103, 103, 0.3);
+			transform: translatey(0px);
+		}
 	}
 
 	/* @keyframes animate {
@@ -192,45 +191,48 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 	} */
 
 	@keyframes scale {
-	100% {
-		transform: scale(1);
-	}
+		100% {
+			transform: scale(1);
+		}
 	}
 
 	@keyframes fade-in {
-	100% {
-		opacity: 1;
-		filter: blur(0);
+		100% {
+			opacity: 1;
+			filter: blur(0);
+		}
 	}
-	}
-
 
 	/* my add stars */
 
-	.stars , .twinkling {
-		position:absolute;
-		top:0;
-		left:0;
-		right:0;
-		bottom:0;
-		width:100%;
-		height:100%;
-		display:block;
-		}
+	.stars,
+	.twinkling {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
 	.stars {
-		background:#000 url(/assets/images/home/stars.png) repeat top center;
+		background: #000 url(/assets/images/home/stars.png) repeat top center;
 		z-index: -3;
-}
-	.twinkling{
-		background:transparent url(/assets/images/home/twinkling.png) repeat top center; 
-		animation:move-twink-back 200s linear infinite;
+	}
+	.twinkling {
+		background: transparent url(/assets/images/home/twinkling.png) repeat top
+			center;
+		animation: move-twink-back 200s linear infinite;
 		z-index: -2;
 	}
 
 	@keyframes move-twink-back {
-		from {background-position:0 0;}
-		to {background-position:-10000px 5000px;}
-
-}
-
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: -10000px 5000px;
+		}
+	}
 </style>

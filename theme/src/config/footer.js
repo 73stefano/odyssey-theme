@@ -33,86 +33,84 @@ export const footerSocials = [
 ]
 
 export const footerLists = [
+	// {
+	// 	items: [
+	// 		{
+	// 			title: 'Legal Page',
+	// 			slug: '/company/legal.astro',
+	// 		},
+	// 	]
+	// },
+	// {
+	// 	items: [
+	// 		{
+	// 			title: 'Cookie Page',
+	// 			slug: '/company/legal.astro'
+	// 		}
+	// 	]
+		 
+	// },
+	// {
+	// 	items: [
+	// 		{
+	// 			title: 'Designed by SP',
+	// 			slug: 'https://webpicart.github.io/sp/'
+	// 		}
+	// 	]
+		 
+	// },
+
+
 	{
+		// title: 'Landing Pages',
 		items: [
 			{
-				title: 'Legal Page',
-				slug: '/company/legal.astro',
+				title: 'Biografia',
+				slug: '/biografia',
 			},
-		]
+			{
+				title: 'Galleria',
+				slug: '/galleria',
+			},
+      {
+				title: 'Legal Page',
+				slug: '/company/legal',
+			},
+		],
 	},
 	{
+		// title: 'Company',
 		items: [
+			{
+				title: 'Video',
+				slug: '/video',
+			},
+			{
+				title: 'Formazioni Artistiche',
+				slug: '/formazioni-artistiche',
+			},
 			{
 				title: 'Cookie Page',
-				slug: '/company/legal.astro'
-			}
-		]
-		 
+				slug: '/company/legal',
+			},
+			
+		],
 	},
 	{
+		// title: 'Theme',
 		items: [
 			{
-				title: '',
-			}
-		]
-		 
+				title: 'Recensioni',
+				slug: '/recensioni',
+			},
+			{
+				title: 'Contatti',
+				slug: '/company/contact',
+			},
+			{
+				title: 'Designed by SP',
+				slug: 'https://webpicart.github.io/sp/',
+			},
+		],
 	},
-]
-
-// 	{
-// 		title: 'Landing Pages',
-// 		items: [
-// 			{
-// 				title: 'Landing Page 1',
-// 				slug: '/landing-pages/landing-1',
-// 			},
-// 			{
-// 				title: 'Landing Page 2',
-// 				slug: '/landing-pages/landing-2',
-// 			},
-//       {
-// 				title: 'Landing Page 3',
-// 				slug: '/landing-pages/landing-3',
-// 			},
-// 		],
-// 	},
-// 	{
-// 		title: 'Company',
-// 		items: [
-// 			{
-// 				title: 'About',
-// 				slug: '/company/about',
-// 			},
-// 			{
-// 				title: 'Blog',
-// 				slug: '/blog',
-// 			},
-// 			{
-// 				title: 'Contact',
-// 				slug: '/company/contact',
-// 			},
-// 		],
-// 	},
-// 	{
-// 		title: 'Theme',
-// 		items: [
-// 			{
-// 				title: 'Get Started',
-// 				slug: '/theme/get-started',
-// 			},
-// 			{
-// 				title: 'Style Guide',
-// 				slug: '/theme/style-guide',
-// 			},
-//       {
-//         title: 'Theme Setup',
-//         slug: '/theme/theme-setup',
-//       },
-//       {
-//         title: 'Customizing Odyssey',
-//         slug: '/theme/customizing-odyssey',
-//       }
-// 		],
-// 	},
-// ];
+];
