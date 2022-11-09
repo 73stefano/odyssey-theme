@@ -1,0 +1,312 @@
+---
+import { TextSection } from '@littlesticks/odyssey-theme-components';
+import Layout from '../layouts/Page.astro';
+import HeroSection from '../components/sections/heros/HeroSection.astro';
+import { Container } from '@littlesticks/odyssey-theme-components';
+import ThreeColumnPhotoSection from '../components/sections/heros/ThreeColumnPhotoSection.astro';
+
+const seo = {
+	title: 'Biografia | Biografia di Giovanna Santoro',
+	description:
+		'La biografia di Giovanna Santoro "Pianista" e il Quartetto Crom4tiche',
+};
+---
+
+<Layout>
+	<Container>
+		<TextSection narrow>
+			<h1 id="title">Quartetto Crom4tiche</h1>
+			<picture>
+				<img
+					class="img-center"
+					src="/assets/images/galleria/logo-crom4tiche.jpeg"
+					alt="Rezarta Dyrmyshi"
+					id="home-hero-image"
+				/>
+			</picture>
+		</TextSection>
+
+		<HeroSection>
+			<div slot="text-container">
+				<h1 class="zoomIn">Rezarta Dyrmyshi</h1>
+				<h3 class="zoomIn">Cantante Lirica Soprano</h3>
+				<!-- <h4 class="text-smoke">Esperienza e Formazione:</h4>
+				<p class="text-smoke">
+					Giovanna Santoro ha conseguito la laurea, vecchio ordinamento, in
+					pianoforte, presso il Conservatorio musicale “O.Respighi” di Latina, nel
+					1999. In seguito ha approfondito lo studio della tecnica pianistica con
+					il maestro Licia Mancini e Giandomenico Gravina, partecipando anche a
+					vari concorsi internazionali, con i violinisti Alessandro Malizia e
+					Irene Malizia, aggiudicandosi primi e secondi premi. Continua la sua
+					formazione a Gallarate sotto la guida del maestro Rucli, nel biennio
+					superiore di pianoforte presso l’Istituto musicale superiore di
+					Gallarate. Pianista versatile, svolge diverse attività artistiche in
+					varie tipologie di formazioni artistiche e ampio repertorio, pianista
+					solista, in duo pianistico a 4 mani, cameristica sia con strumenti a
+					fiato che ad arco, pianista accompagnatore in concerti lirici e sacri
+					con cantanti lirici e non, e pianista accompagnatore in concerti corali.
+				</p> -->
+			</div>
+			<picture slot="image-container">
+				<img
+					class="zoomIn"
+					src="/assets/images/galleria/Rezarta Dyrmyshi-2.jpeg"
+					alt="Rezarta Dyrmyshi"
+					id="home-hero-image"
+					width={550}
+					height={400}
+				/>
+			</picture>
+		</HeroSection>
+
+		<HeroSection>
+			<picture slot="image-container">
+				<img
+					class="zoomIn"
+					src="/assets/images/galleria/2-ramona.jpeg"
+					alt="Giovanna Santoro"
+					id="home-hero-image"
+					width={550}
+					height={400}
+				/>
+			</picture>
+			<div slot="text-container">
+				<h1 class="zoomIn">Ramona Veneri</h1>
+				<h3 class="zoomIn">Cantante Lirica Soprano</h3>
+			</div>
+		</HeroSection>
+
+		<HeroSection>
+			<picture slot="image-container">
+				<img
+					class="zoomIn"
+					src="/assets/images/galleria/3-Lorena.jpeg"
+					alt="Giovanna Santoro"
+					id="home-hero-image"
+					width={550}
+					height={400}
+				/>
+			</picture>
+			<div slot="text-container">
+				<h1 class="zoomIn">Lorena Sarra</h1>
+				<h3 class="zoomIn">Cantante Lirica Soprano</h3>
+			</div>
+		</HeroSection>
+
+		<HeroSection>
+			<picture slot="image-container">
+				<img
+					class="zoomIn"
+					src="/assets/images/galleria/Giovanna.jpeg"
+					alt="Giovanna Santoro"
+					id="home-hero-image"
+					width={550}
+					height={400}
+				/>
+			</picture>
+			<div slot="text-container">
+				<h1 class="zoomIn">Giovanna Santoro</h1>
+				<h3 class="zoomIn">Pianista</h3>
+			</div>
+		</HeroSection>
+
+		<TextSection narrow>
+			<h2 id="title">Repertorio Quartetto Crom4tiche :</h2>
+			<h4 id="title">
+				Repertorio Lirico Operistico, Tradizione Napoletana, Musiaca da Film,
+				Musical
+			</h4>
+		</TextSection>
+
+		<ThreeColumnPhotoSection>
+			<div slot="column-1-photo">
+				<picture>
+					<img
+						class="zoomIn border-radius"
+						src="/assets/images/galleria/crom4tiche-1.jpeg"
+						alt="Giovanna Santoro"
+						id="home-hero-image"
+					/>
+				</picture>
+			</div>
+			<div slot="column-2-photo">
+				<picture>
+					<img
+						class="zoomIn border-radius"
+						src="/assets/images/galleria/cromatiche-2.jpeg"
+						alt="Giovanna Santoro"
+						id="home-hero-image"
+					/>
+				</picture>
+			</div>
+			<div slot="column-3-photo">
+				<picture>
+					<img
+						class="zoomIn border-radius"
+						src="/assets/images/galleria/cromatiche-4.jpeg"
+						alt="Giovanna Santoro"
+						id="home-hero-image"
+					/>
+				</picture>
+			</div>
+		</ThreeColumnPhotoSection>
+		<ThreeColumnPhotoSection>
+			<div slot="column-1-photo">
+				<picture>
+					<img
+						class="zoomIn border-radius"
+						src="/assets/images/galleria/cromatiche-6.jpeg"
+						alt="Giovanna Santoro"
+						id="home-hero-image"
+					/>
+				</picture>
+			</div>
+			<div slot="column-2-photo">
+				<picture>
+					<img
+						class="zoomIn border-radius"
+						src="/assets/images/galleria/cromatiche-3.JPG"
+						alt="Giovanna Santoro"
+						id="home-hero-image"
+					/>
+				</picture>
+			</div>
+			<div slot="column-3-photo">
+				<picture>
+					<img
+						class="zoomIn border-radius"
+						src="/assets/images/galleria/cromatiche-7.jpeg"
+						alt="Giovanna Santoro"
+						id="home-hero-image"
+					/>
+				</picture>
+			</div>
+		</ThreeColumnPhotoSection>
+		<ThreeColumnPhotoSection>
+			<div slot="column-1-photo">
+				<picture>
+					<img
+						class="zoomIn border-radius"
+						src="/assets/images/galleria/cromatiche-8.jpeg"
+						alt="Giovanna Santoro"
+						id="home-hero-image"
+					/>
+				</picture>
+			</div>
+			<div slot="column-2-photo">
+				<picture>
+					<img
+						class="zoomIn border-radius"
+						src="/assets/images/galleria/cromatiche-5.jpeg"
+						alt="Giovanna Santoro"
+						id="home-hero-image"
+					/>
+				</picture>
+			</div>
+			<div slot="column-3-photo">
+				<picture>
+					<img
+						class="zoomIn border-radius"
+						src="/assets/images/galleria/cromatiche-9.jpeg"
+						alt="Giovanna Santoro"
+						id="home-hero-image"
+					/>
+				</picture>
+			</div>
+		</ThreeColumnPhotoSection>
+		<ThreeColumnPhotoSection>
+			<div slot="column-1-photo">
+				<picture>
+					<img
+						class="zoomIn border-radius"
+						src="/assets/images/galleria/cromatiche-10.jpeg"
+						alt="Giovanna Santoro"
+						id="home-hero-image"
+					/>
+				</picture>
+			</div>
+		</ThreeColumnPhotoSection>
+	</Container>
+</Layout>
+
+<style>
+	/*.text-smoke {
+		text-shadow: 0 0 0 whitesmoke;
+		animation: smoky 2.5s ease-in-out;
+		/* animation-direction: reverse; */
+	/*	} */
+
+	/*	@keyframes smoky {
+		0% {
+			transform: translate3d(10px, -300px, 0)
+				/* skewX(70deg)  rotate(-20deg)  scale(0.5); */
+	/*			text-shadow: 20px 20px 30px whitesmoke;
+			opacity: 0;
+		}
+		50% {
+			opacity: 0.1;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	 .fade-in-image {
+		animation: fadeIn 9s;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	} */
+
+	.border-radius {
+		border-radius: var(--theme-shape-radius);
+	}
+
+	#title {
+		/* opacity: 0.7; */
+		text-align: center;
+		/* font-size: var(--font-size-lg); */
+	}
+	.img-center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+		border-radius: 20px;
+		margin-bottom: 100px;
+	}
+
+	.zoomIn {
+		-webkit-animation-name: zoomIn;
+		animation-name: zoomIn;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+	@-webkit-keyframes zoomIn {
+		0% {
+			opacity: 0;
+			-webkit-transform: scale3d(0.3, 0.3, 0.3);
+			transform: scale3d(0.3, 0.3, 0.3);
+		}
+		50% {
+			opacity: 1;
+		}
+	}
+	@keyframes zoomIn {
+		0% {
+			opacity: 0;
+			-webkit-transform: scale3d(0.3, 0.3, 0.3);
+			transform: scale3d(0.3, 0.3, 0.3);
+		}
+		50% {
+			opacity: 1;
+		}
+	}
+</style>

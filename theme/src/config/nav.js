@@ -8,6 +8,10 @@ export const nav = [
 		slug: '/biografia',
 	},
 	{
+		title: 'Quartetto Crom4tiche',
+		slug: '/quartetto-crom4tiche',
+	},
+	{
 		title: 'Galleria',
 		slug: '/galleria',
 	},
