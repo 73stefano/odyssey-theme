@@ -1,5 +1,8 @@
 ---
-import { TextSection } from '@littlesticks/odyssey-theme-components';
+import {
+	TextSection,
+	YouTubeEmbedSection,
+} from '@littlesticks/odyssey-theme-components';
 import Layout from '../layouts/Page.astro';
 import HeroSection from '../components/sections/heros/HeroSection.astro';
 import { Container } from '@littlesticks/odyssey-theme-components';
@@ -97,7 +100,7 @@ const seo = {
 			<picture slot="image-container">
 				<img
 					class="zoomIn"
-					src="/assets/images/galleria/Giovanna.jpeg"
+					src="/assets/images/galleria/cromatiche-giovanna.jpg"
 					alt="Giovanna Santoro"
 					id="home-hero-image"
 					width={550}
@@ -226,6 +229,46 @@ const seo = {
 				</picture>
 			</div>
 		</ThreeColumnPhotoSection>
+
+		<TextSection narrow>
+			<h2 id="title">VIDEO</h2>
+		</TextSection>
+
+		<div class="youtube">
+			<TextSection>
+				<h3 id="parola_al_coronavirus">MEDLEY MUSICAL-OPERA</h3>
+				<h4>QUARTETTO CROM4TICHE</h4>
+			</TextSection>
+			<YouTubeEmbedSection
+				url="https://www.youtube.com/watch?v=2ze7BnCBz5k"
+				rounded
+				allow="autoplay"
+			/>
+		</div>
+
+		<div class="youtube">
+			<TextSection>
+				<h3 id="parola_al_coronavirus">FANTASMA DELL'OPERA</h3>
+				<h4>QUARTETTO CROM4TICHE</h4>
+			</TextSection>
+			<YouTubeEmbedSection
+				url="https://www.youtube.com/watch?v=9jhqxkyGtoQ"
+				rounded
+				allow="autoplay"
+			/>
+		</div>
+
+		<div class="youtube">
+			<TextSection>
+				<h3 id="parola_al_coronavirus">NESSUN DORMA</h3>
+				<h4>QUARTETTO CROM4TICHE</h4>
+			</TextSection>
+			<YouTubeEmbedSection
+				url="https://www.youtube.com/watch?v=u5BfHt84_B4"
+				rounded
+				allow="autoplay"
+			/>
+		</div>
 	</Container>
 </Layout>
 
@@ -307,6 +350,12 @@ const seo = {
 		}
 		50% {
 			opacity: 1;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		.youtube {
+			margin: var(--section-margin) 70px;
 		}
 	}
 </style>
