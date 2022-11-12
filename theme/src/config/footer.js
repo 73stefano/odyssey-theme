@@ -108,6 +108,10 @@ export const footerLists = [
 				slug: '/company/contact',
 			},
 			{
+				title: 'Quartetto Crom4tiche',
+				slug: '/quartetto-crom4tiche'
+			},
+			{
 				title: 'Designed by SP',
 				slug: 'https://webpicart.github.io/sp/',
 			},
