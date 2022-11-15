@@ -91,7 +91,7 @@ export const footerLists = [
 			},
 			{
 				title: 'Cookie Page',
-				slug: '/company/legal',
+				slug: '/company/cookie',
 			},
 			
 		],

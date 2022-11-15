@@ -1,0 +1,38 @@
+---
+import { TextSection } from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+
+const seo = {
+	title: `Giovanna Santoro | Cookie Policy`,
+	description: `This is the legal page , Privacy Policy ,Cookie Policy.`,
+};
+---
+
+<Layout {seo}>
+	<TextSection narrow>
+		<a
+			href="https://www.iubenda.com/privacy-policy/53352502/cookie-policy"
+			class="iubenda-white no-brand iubenda-noiframe iubenda-embed iub-no-markup iubenda-noiframe iub-body-embed"
+			title="Cookie Policy"
+			>Cookie Policy
+		</a>
+
+		<script type="text/javascript">
+			(function (w, d) {
+				var loader = function () {
+					var s = d.createElement('script'),
+						tag = d.getElementsByTagName('script')[0];
+					s.src = 'https://cdn.iubenda.com/iubenda.js';
+					tag.parentNode.insertBefore(s, tag);
+				};
+				if (w.addEventListener) {
+					w.addEventListener('load', loader, false);
+				} else if (w.attachEvent) {
+					w.attachEvent('onload', loader);
+				} else {
+					w.onload = loader;
+				}
+			})(window, document);
+		</script>
+	</TextSection>
+</Layout>
